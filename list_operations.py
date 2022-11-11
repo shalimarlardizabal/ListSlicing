@@ -1,149 +1,149 @@
-# """Utilities for manipulating lists."""
+"""Utilities for manipulating lists."""
 
-# def head(input_list):
-#     """Return the first item of the input list.
+def head(input_list):
+    """Return the first item of the input list.
 
-#     For example:
+    For example:
 
-#       >>> head(['Jan', 'Feb', 'Mar'])
-#       'Jan'
-#     """
-#     first_item = input_list[0]
+      >>> head(['Jan', 'Feb', 'Mar'])
+      'Jan'
+    """
+    first_item = input_list[0]
     
-#     return first_item
+    return first_item
 
-# def tail(input_list):
-#     """Return a new list of all items, excluding the first item.
+def tail(input_list):
+    """Return a new list of all items, excluding the first item.
 
-#     For example:
+    For example:
 
-#     >>> tail(['Jan', 'Feb', 'Mar'])
-#     ['Feb', 'Mar']
+    >>> tail(['Jan', 'Feb', 'Mar'])
+    ['Feb', 'Mar']
 
-#     """
-#     input_list.pop(0)
+    """
+    input_list.pop(0)
 
-#     return input_list
-
-
-# def last(input_list):
-#     """Return the last item of the input list.
-
-#     For example:
-
-#     >>> last(['Jan', 'Feb', 'Mar'])
-#     'Mar'
-
-#     """
-#     last_item = input_list[-1]
-
-#     return last_item
+    return []
 
 
-# def top(input_list):
-#     """Return all elements of the input list except the last.
+def last(input_list):
+    """Return the last item of the input list.
 
-#     For example:
+    For example:
 
-#     >>> top(['Jan', 'Feb', 'Mar'])
-#     ['Jan', 'Feb']
+    >>> last(['Jan', 'Feb', 'Mar'])
+    'Mar'
 
-#     """
-#     input_list[:-1]
+    """
+    input_list[-1]
 
-#     return input_list
+    return []
 
 
-# def first_three(input_list):
-#     """Return the first three elements of the input list.
+def top(input_list):
+    """Return all elements of the input list except the last.
 
-#     For example:
+    For example:
 
-#     >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-#     ['Jan', 'Feb', 'Mar']
+    >>> top(['Jan', 'Feb', 'Mar'])
+    ['Jan', 'Feb']
 
-#     """
-#     input_list[:4]
+    """
+    input_list[:-1]
+
+    return []
+
+
+def first_three(input_list):
+    """Return the first three elements of the input list.
+
+    For example:
+
+    >>> first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
+    ['Jan', 'Feb', 'Mar']
+
+    """
+    input_list[0:4]
     
-#     return input_list
+    return []
 
 
-# def last_five(input_list):
-#     """Return the last five elements of the input list.
+def last_five(input_list):
+    """Return the last five elements of the input list.
 
-#     For example:
+    For example:
 
-#     >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [15, 18, 21, 24, 27]
+    >>> last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [15, 18, 21, 24, 27]
 
-#     """
-#     input_list[-5:]
+    """
+    input_list[-5:]
 
-#     return input_list
-
-
-# def middle(input_list):
-#     """Return all elements of input_list except the first two and the last two.
-
-#     For example:
-
-#     >>> middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [6, 9, 12, 15, 18, 21]
-
-#     """
-#     input_list[2:-2]
-
-#     return input_list
+    return []
 
 
-# def inner_four(input_list):
-#     """Return the third, fourth, fifth, and sixth elements of input_list.
+def middle(input_list):
+    """Return all elements of input_list except the first two and the last two.
 
-#     For example:
+    For example:
 
-#     >>> inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [6, 9, 12, 15]
+    >>> middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [6, 9, 12, 15, 18, 21]
 
-#     """
-#     input_list[2:7]
+    """
+    input_list[2:-2]
 
-#     return input_list
-
-
-# def inner_four_end(input_list):
-#     """Return the elements that are 6th, 5th, 4th, and 3rd from the end of input_list.
-
-#     This function should return those elements in a list, in the exact order
-#     described above.
-
-#     For example:
-
-#     >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-#     [12, 15, 18, 21]
-
-#     """
-#     input_list[-6:-2]
-#     return input_list
+    return []
 
 
-# def replace_head(input_list):
-#     """Replace the head of input_list with the value 42 and return nothing.
+def inner_four(input_list):
+    """Return the third, fourth, fifth, and sixth elements of input_list.
 
-#     Input list must be modified in-place, not merely reassigned to a new value.
+    For example:
 
-#     For example:
+    >>> inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [6, 9, 12, 15]
 
-#     >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-#     >>> replace_head(multiples)
-#     >>> multiples
-#     [42, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    """
+    input_list[2:7]
 
-#     """
-#     input_list[0] = 42
+    return []
 
-#     return input_list
+
+def inner_four_end(input_list):
+    """Return the elements that are 6th, 5th, 4th, and 3rd from the end of input_list.
+
+    This function should return those elements in a list, in the exact order
+    described above.
+
+    For example:
+
+    >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    [12, 15, 18, 21]
+
+    """
+    input_list[-6:-2]
+    
+    return []
+
+
+def replace_head(input_list):
+    """Replace the head of input_list with the value 42 and return nothing.
+
+    Input list must be modified in-place, not merely reassigned to a new value.
+
+    For example:
+
+    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    >>> replace_head(multiples)
+    >>> multiples
+    [42, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+
+    """
+    input_list[0] = 42
 
     
+    pass
 
 
 def replace_third_and_last(input_list):
@@ -160,60 +160,69 @@ def replace_third_and_last(input_list):
 
     """
 
+    input_list[2] = 37
+    input_list[-1] = 37
+
+
+pass
+
+
+def replace_middle(input_list):
+    """Replace all elements of a list but the first two and last two with 42 and 37.
+
+    After the replacement, 42 and 37 should appear in that order in input_list.
+    Input list must be modified in-place, not merely reassigned to a new value.
+
+    Return nothing.
+
+    For example:
+
+    >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    >>> replace_middle(multiples)
+    >>> multiples
+    [0, 3, 42, 37, 24, 27]
+
+    """
+    input_list[3:-2]= [42, 37]
+
     pass
 
 
-# def replace_middle(input_list):
-#     """Replace all elements of a list but the first two and last two with 42 and 37.
+def delete_third_and_seventh(input_list):
+    """Remove third and seventh elements of input_list and return nothing.
 
-#     After the replacement, 42 and 37 should appear in that order in input_list.
-#     Input list must be modified in-place, not merely reassigned to a new value.
+    Input list must be modified in-place, not merely reassigned to a new value.
 
-#     Return nothing.
+    For example:
 
-#     For example:
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> delete_third_and_seventh(notes)
+    >>> notes
+    ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
 
-#     >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-#     >>> replace_middle(multiples)
-#     >>> multiples
-#     [0, 3, 42, 37, 24, 27]
-
-#     """
-
-#     pass
-
-
-# def delete_third_and_seventh(input_list):
-#     """Remove third and seventh elements of input_list and return nothing.
-
-#     Input list must be modified in-place, not merely reassigned to a new value.
-
-#     For example:
-
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> delete_third_and_seventh(notes)
-#     >>> notes
-#     ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
-
-#     """
-
-#     pass
+    """
+    input_list.pop(2)
+    input_list.pop(5)
+    
+    return input_list
+    
 
 
-# def delete_middle(input_list):
-#     """Remove all elements from input_list except the first two and last two.
+def delete_middle(input_list):
+    """Remove all elements from input_list except the first two and last two.
 
-#     Input list must be modified in-place, not merely reassigned to a new value.
+    Input list must be modified in-place, not merely reassigned to a new value.
 
-#     Return nothing.
+    Return nothing.
 
-#     For example:
+    For example:
 
-#     >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-#     >>> delete_middle(notes)
-#     >>> notes
-#     ['Do', 'Re', 'Ti', 'Do']
+    >>> notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    >>> delete_middle(notes)
+    >>> notes
+    ['Do', 'Re', 'Ti', 'Do']
 
-#     """
+    """
 
-#     pass
+    pass
+    input_list[2:-2] = []
